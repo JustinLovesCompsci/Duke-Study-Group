@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA30E5C31A93D03100B378D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA30E5C21A93D03100B378D0 /* AppDelegate.swift */; };
+		AA30E5C61A93D03100B378D0 /* DukeStudy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AA30E5C41A93D03100B378D0 /* DukeStudy.xcdatamodeld */; };
+		AA30E5C81A93D03100B378D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA30E5C71A93D03100B378D0 /* ViewController.swift */; };
+		AA30E5CB1A93D03100B378D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA30E5C91A93D03100B378D0 /* Main.storyboard */; };
+		AA30E5CD1A93D03100B378D0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA30E5CC1A93D03100B378D0 /* Images.xcassets */; };
+		AA30E5D01A93D03100B378D0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA30E5CE1A93D03100B378D0 /* LaunchScreen.xib */; };
+		AA30E5DC1A93D03100B378D0 /* DukeStudyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA30E5DB1A93D03100B378D0 /* DukeStudyTests.swift */; };
+		AA30E5E91A93DAA200B378D0 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA30E5E81A93DAA200B378D0 /* WelcomeViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA30E5D61A93D03100B378D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA30E5B51A93D03100B378D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA30E5BC1A93D03100B378D0;
+			remoteInfo = DukeStudy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AA30E5BD1A93D03100B378D0 /* DukeStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DukeStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA30E5C11A93D03100B378D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA30E5C21A93D03100B378D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AA30E5C51A93D03100B378D0 /* DukeStudy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DukeStudy.xcdatamodel; sourceTree = "<group>"; };
+		AA30E5C71A93D03100B378D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AA30E5CA1A93D03100B378D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AA30E5CC1A93D03100B378D0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AA30E5CF1A93D03100B378D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		AA30E5D51A93D03100B378D0 /* DukeStudyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DukeStudyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA30E5DA1A93D03100B378D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA30E5DB1A93D03100B378D0 /* DukeStudyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DukeStudyTests.swift; sourceTree = "<group>"; };
+		AA30E5E81A93DAA200B378D0 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA30E5BA1A93D03100B378D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA30E5D21A93D03100B378D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA30E5B41A93D03100B378D0 = {
+			isa = PBXGroup;
+			children = (
+				AA30E5E51A93DA3B00B378D0 /* ViewControllers */,
+				AA30E5BF1A93D03100B378D0 /* DukeStudy */,
+				AA30E5D81A93D03100B378D0 /* DukeStudyTests */,
+				AA30E5BE1A93D03100B378D0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA30E5BE1A93D03100B378D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA30E5BD1A93D03100B378D0 /* DukeStudy.app */,
+				AA30E5D51A93D03100B378D0 /* DukeStudyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA30E5BF1A93D03100B378D0 /* DukeStudy */ = {
+			isa = PBXGroup;
+			children = (
+				AA30E5C21A93D03100B378D0 /* AppDelegate.swift */,
+				AA30E5C71A93D03100B378D0 /* ViewController.swift */,
+				AA30E5C91A93D03100B378D0 /* Main.storyboard */,
+				AA30E5CC1A93D03100B378D0 /* Images.xcassets */,
+				AA30E5CE1A93D03100B378D0 /* LaunchScreen.xib */,
+				AA30E5C41A93D03100B378D0 /* DukeStudy.xcdatamodeld */,
+				AA30E5C01A93D03100B378D0 /* Supporting Files */,
+			);
+			path = DukeStudy;
+			sourceTree = "<group>";
+		};
+		AA30E5C01A93D03100B378D0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA30E5C11A93D03100B378D0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AA30E5D81A93D03100B378D0 /* DukeStudyTests */ = {
+			isa = PBXGroup;
+			children = (
+				AA30E5DB1A93D03100B378D0 /* DukeStudyTests.swift */,
+				AA30E5D91A93D03100B378D0 /* Supporting Files */,
+			);
+			path = DukeStudyTests;
+			sourceTree = "<group>";
+		};
+		AA30E5D91A93D03100B378D0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA30E5DA1A93D03100B378D0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AA30E5E51A93DA3B00B378D0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AA30E5E81A93DAA200B378D0 /* WelcomeViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA30E5BC1A93D03100B378D0 /* DukeStudy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA30E5DF1A93D03100B378D0 /* Build configuration list for PBXNativeTarget "DukeStudy" */;
+			buildPhases = (
+				AA30E5B91A93D03100B378D0 /* Sources */,
+				AA30E5BA1A93D03100B378D0 /* Frameworks */,
+				AA30E5BB1A93D03100B378D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DukeStudy;
+			productName = DukeStudy;
+			productReference = AA30E5BD1A93D03100B378D0 /* DukeStudy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AA30E5D41A93D03100B378D0 /* DukeStudyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA30E5E21A93D03100B378D0 /* Build configuration list for PBXNativeTarget "DukeStudyTests" */;
+			buildPhases = (
+				AA30E5D11A93D03100B378D0 /* Sources */,
+				AA30E5D21A93D03100B378D0 /* Frameworks */,
+				AA30E5D31A93D03100B378D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA30E5D71A93D03100B378D0 /* PBXTargetDependency */,
+			);
+			name = DukeStudyTests;
+			productName = DukeStudyTests;
+			productReference = AA30E5D51A93D03100B378D0 /* DukeStudyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA30E5B51A93D03100B378D0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Duke-Student-Government";
+				TargetAttributes = {
+					AA30E5BC1A93D03100B378D0 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					AA30E5D41A93D03100B378D0 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = AA30E5BC1A93D03100B378D0;
+					};
+				};
+			};
+			buildConfigurationList = AA30E5B81A93D03100B378D0 /* Build configuration list for PBXProject "DukeStudy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA30E5B41A93D03100B378D0;
+			productRefGroup = AA30E5BE1A93D03100B378D0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA30E5BC1A93D03100B378D0 /* DukeStudy */,
+				AA30E5D41A93D03100B378D0 /* DukeStudyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA30E5BB1A93D03100B378D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA30E5CB1A93D03100B378D0 /* Main.storyboard in Resources */,
+				AA30E5D01A93D03100B378D0 /* LaunchScreen.xib in Resources */,
+				AA30E5CD1A93D03100B378D0 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA30E5D31A93D03100B378D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA30E5B91A93D03100B378D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA30E5C81A93D03100B378D0 /* ViewController.swift in Sources */,
+				AA30E5E91A93DAA200B378D0 /* WelcomeViewController.swift in Sources */,
+				AA30E5C61A93D03100B378D0 /* DukeStudy.xcdatamodeld in Sources */,
+				AA30E5C31A93D03100B378D0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA30E5D11A93D03100B378D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA30E5DC1A93D03100B378D0 /* DukeStudyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA30E5D71A93D03100B378D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA30E5BC1A93D03100B378D0 /* DukeStudy */;
+			targetProxy = AA30E5D61A93D03100B378D0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AA30E5C91A93D03100B378D0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA30E5CA1A93D03100B378D0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AA30E5CE1A93D03100B378D0 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA30E5CF1A93D03100B378D0 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA30E5DD1A93D03100B378D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA30E5DE1A93D03100B378D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA30E5E01A93D03100B378D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DukeStudy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AA30E5E11A93D03100B378D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DukeStudy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AA30E5E31A93D03100B378D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DukeStudyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DukeStudy.app/DukeStudy";
+			};
+			name = Debug;
+		};
+		AA30E5E41A93D03100B378D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DukeStudyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DukeStudy.app/DukeStudy";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA30E5B81A93D03100B378D0 /* Build configuration list for PBXProject "DukeStudy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA30E5DD1A93D03100B378D0 /* Debug */,
+				AA30E5DE1A93D03100B378D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA30E5DF1A93D03100B378D0 /* Build configuration list for PBXNativeTarget "DukeStudy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA30E5E01A93D03100B378D0 /* Debug */,
+				AA30E5E11A93D03100B378D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AA30E5E21A93D03100B378D0 /* Build configuration list for PBXNativeTarget "DukeStudyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA30E5E31A93D03100B378D0 /* Debug */,
+				AA30E5E41A93D03100B378D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AA30E5C41A93D03100B378D0 /* DukeStudy.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AA30E5C51A93D03100B378D0 /* DukeStudy.xcdatamodel */,
+			);
+			currentVersion = AA30E5C51A93D03100B378D0 /* DukeStudy.xcdatamodel */;
+			path = DukeStudy.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AA30E5B51A93D03100B378D0 /* Project object */;
+}
