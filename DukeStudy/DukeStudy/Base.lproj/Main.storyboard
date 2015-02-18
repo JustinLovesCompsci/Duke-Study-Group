@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Wsq-Y6-LBm">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--welcomeViewController-->
@@ -301,7 +302,108 @@
                     <view key="view" contentMode="scaleToFill" id="5iL-95-Xqt">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Duke Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pp8-s0-85k">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U6l-MC-Cnq">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PfO-9K-Zo1">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.1273505446" green="0.39211344580000002" blue="0.84128736410000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Join now">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="16" y="174" width="368" height="36"/>
+                                </variation>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot password?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2J-vu-3VJ">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="P0s-0O-1PO"/>
+                                    <constraint firstAttribute="width" constant="140" id="SmZ-Wx-jgJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="P0s-0O-1PO"/>
+                                        <exclude reference="SmZ-Wx-jgJ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="130" y="229" width="140" height="21"/>
+                                    <mask key="constraints">
+                                        <include reference="P0s-0O-1PO"/>
+                                        <include reference="SmZ-Wx-jgJ"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pp8-s0-85k" firstAttribute="leading" secondItem="U6l-MC-Cnq" secondAttribute="leading" id="53q-Di-Yvx"/>
+                            <constraint firstItem="pp8-s0-85k" firstAttribute="trailing" secondItem="PfO-9K-Zo1" secondAttribute="trailing" id="6oK-IT-kTF"/>
+                            <constraint firstItem="PfO-9K-Zo1" firstAttribute="top" secondItem="pp8-s0-85k" secondAttribute="bottom" constant="48" id="Pdu-mo-Byb"/>
+                            <constraint firstItem="f2J-vu-3VJ" firstAttribute="centerX" secondItem="PfO-9K-Zo1" secondAttribute="centerX" id="SdZ-Rx-Rco"/>
+                            <constraint firstItem="pp8-s0-85k" firstAttribute="leading" secondItem="5iL-95-Xqt" secondAttribute="leadingMargin" id="Tea-Ux-bHK"/>
+                            <constraint firstItem="pp8-s0-85k" firstAttribute="leading" secondItem="PfO-9K-Zo1" secondAttribute="leading" id="UE1-hn-Grj"/>
+                            <constraint firstItem="pp8-s0-85k" firstAttribute="trailing" secondItem="U6l-MC-Cnq" secondAttribute="trailing" id="cKv-cI-gJ0"/>
+                            <constraint firstItem="pp8-s0-85k" firstAttribute="top" secondItem="xvH-Pi-cPj" secondAttribute="bottom" constant="32" id="cxO-tn-dmV"/>
+                            <constraint firstItem="f2J-vu-3VJ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="PfO-9K-Zo1" secondAttribute="bottom" constant="17" id="kGB-6W-RzR"/>
+                            <constraint firstItem="PfO-9K-Zo1" firstAttribute="top" secondItem="U6l-MC-Cnq" secondAttribute="bottom" constant="19" id="mTm-Ae-jg1"/>
+                            <constraint firstItem="pp8-s0-85k" firstAttribute="trailing" secondItem="5iL-95-Xqt" secondAttribute="trailingMargin" id="v6d-dS-9NJ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="pp8-s0-85k"/>
+                                <exclude reference="U6l-MC-Cnq"/>
+                                <exclude reference="PfO-9K-Zo1"/>
+                                <exclude reference="f2J-vu-3VJ"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="53q-Di-Yvx"/>
+                                <exclude reference="6oK-IT-kTF"/>
+                                <exclude reference="Tea-Ux-bHK"/>
+                                <exclude reference="UE1-hn-Grj"/>
+                                <exclude reference="cKv-cI-gJ0"/>
+                                <exclude reference="cxO-tn-dmV"/>
+                                <exclude reference="v6d-dS-9NJ"/>
+                                <exclude reference="Pdu-mo-Byb"/>
+                                <exclude reference="mTm-Ae-jg1"/>
+                                <exclude reference="SdZ-Rx-Rco"/>
+                                <exclude reference="kGB-6W-RzR"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="pp8-s0-85k"/>
+                                <include reference="U6l-MC-Cnq"/>
+                                <include reference="PfO-9K-Zo1"/>
+                                <include reference="f2J-vu-3VJ"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="53q-Di-Yvx"/>
+                                <include reference="6oK-IT-kTF"/>
+                                <include reference="Tea-Ux-bHK"/>
+                                <include reference="UE1-hn-Grj"/>
+                                <include reference="cKv-cI-gJ0"/>
+                                <include reference="cxO-tn-dmV"/>
+                                <include reference="v6d-dS-9NJ"/>
+                                <include reference="Pdu-mo-Byb"/>
+                                <include reference="mTm-Ae-jg1"/>
+                                <include reference="SdZ-Rx-Rco"/>
+                                <include reference="kGB-6W-RzR"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="3t9-sO-aKl"/>
                 </viewController>
