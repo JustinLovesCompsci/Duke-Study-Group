@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA0CED2F1A9666FD000C02AC /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0CED2E1A9666FD000C02AC /* RegisterViewController.swift */; };
+		AA0CED311A966719000C02AC /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0CED301A966719000C02AC /* LogInViewController.swift */; };
 		AA30E5C31A93D03100B378D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA30E5C21A93D03100B378D0 /* AppDelegate.swift */; };
 		AA30E5C61A93D03100B378D0 /* DukeStudy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AA30E5C41A93D03100B378D0 /* DukeStudy.xcdatamodeld */; };
 		AA30E5C81A93D03100B378D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA30E5C71A93D03100B378D0 /* ViewController.swift */; };
@@ -28,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA0CED2E1A9666FD000C02AC /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		AA0CED301A966719000C02AC /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		AA30E5BD1A93D03100B378D0 /* DukeStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DukeStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA30E5C11A93D03100B378D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA30E5C21A93D03100B378D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				AA30E5E81A93DAA200B378D0 /* WelcomeViewController.swift */,
+				AA0CED2E1A9666FD000C02AC /* RegisterViewController.swift */,
+				AA0CED301A966719000C02AC /* LogInViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -227,6 +233,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA30E5C81A93D03100B378D0 /* ViewController.swift in Sources */,
+				AA0CED2F1A9666FD000C02AC /* RegisterViewController.swift in Sources */,
+				AA0CED311A966719000C02AC /* LogInViewController.swift in Sources */,
 				AA30E5E91A93DAA200B378D0 /* WelcomeViewController.swift in Sources */,
 				AA30E5C61A93D03100B378D0 /* DukeStudy.xcdatamodeld in Sources */,
 				AA30E5C31A93D03100B378D0 /* AppDelegate.swift in Sources */,
@@ -421,6 +429,7 @@
 				AA30E5E11A93D03100B378D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA30E5E21A93D03100B378D0 /* Build configuration list for PBXNativeTarget "DukeStudyTests" */ = {
 			isa = XCConfigurationList;
@@ -429,6 +438,7 @@
 				AA30E5E41A93D03100B378D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

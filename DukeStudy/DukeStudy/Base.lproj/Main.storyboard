@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Wsq-Y6-LBm">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -66,9 +67,8 @@
                                     </fragment>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                <variation key="heightClass=regular-widthClass=compact">
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <rect key="frame" x="129" y="310" width="142" height="49"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -94,10 +94,6 @@
                                 <exclude reference="pB5-mY-op3"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="J59-iD-urz"/>
-                                <exclude reference="KyI-QY-S08"/>
-                                <exclude reference="leS-QG-39v"/>
-                                <exclude reference="qPV-Q1-2Pt"/>
                                 <exclude reference="F9U-lE-bgY"/>
                                 <exclude reference="hnr-Z0-fP8"/>
                                 <exclude reference="3j1-Or-7C9"/>
@@ -105,6 +101,10 @@
                                 <exclude reference="IR1-cI-H92"/>
                                 <exclude reference="RY4-ai-N2T"/>
                                 <exclude reference="gmO-9h-8Mo"/>
+                                <exclude reference="J59-iD-urz"/>
+                                <exclude reference="KyI-QY-S08"/>
+                                <exclude reference="leS-QG-39v"/>
+                                <exclude reference="qPV-Q1-2Pt"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -115,10 +115,6 @@
                                 <include reference="pB5-mY-op3"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="J59-iD-urz"/>
-                                <include reference="KyI-QY-S08"/>
-                                <include reference="leS-QG-39v"/>
-                                <include reference="qPV-Q1-2Pt"/>
                                 <include reference="F9U-lE-bgY"/>
                                 <include reference="hnr-Z0-fP8"/>
                                 <include reference="3j1-Or-7C9"/>
@@ -126,6 +122,10 @@
                                 <include reference="IR1-cI-H92"/>
                                 <include reference="RY4-ai-N2T"/>
                                 <include reference="gmO-9h-8Mo"/>
+                                <include reference="J59-iD-urz"/>
+                                <include reference="KyI-QY-S08"/>
+                                <include reference="leS-QG-39v"/>
+                                <include reference="qPV-Q1-2Pt"/>
                             </mask>
                         </variation>
                     </view>
@@ -138,7 +138,7 @@
         <!--registerViewController-->
         <scene sceneID="wSl-e2-La2">
             <objects>
-                <viewController title="registerViewController" id="qIm-Jr-7Ub" sceneMemberID="viewController">
+                <viewController title="registerViewController" id="qIm-Jr-7Ub" customClass="RegisterViewController" customModule="DukeStudy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DZy-ZK-Nhu"/>
                         <viewControllerLayoutGuide type="bottom" id="fXR-e6-ODg"/>
@@ -188,6 +188,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="joinButton:" destination="qIm-Jr-7Ub" eventType="touchUpInside" id="BFh-pr-kpD"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name (ex. Justin Zhang)" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="nmJ-z8-eP3">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
@@ -286,6 +289,12 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="slF-zR-ePM"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="d1M-qL-7lu" id="5w3-5R-ldk"/>
+                        <outlet property="nameTextField" destination="nmJ-z8-eP3" id="LnF-f3-gDu"/>
+                        <outlet property="passwordTextField" destination="hDM-4P-Iwx" id="S9s-7b-JW5"/>
+                        <outlet property="rePasswordTextField" destination="PpU-Mc-aU8" id="OGQ-Lh-zqf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pWg-Rq-5Nq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -294,7 +303,7 @@
         <!--logInViewController-->
         <scene sceneID="mJu-y3-hZA">
             <objects>
-                <viewController title="logInViewController" id="JBE-hg-64K" sceneMemberID="viewController">
+                <viewController title="logInViewController" id="JBE-hg-64K" customClass="LogInViewController" customModule="DukeStudy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xvH-Pi-cPj"/>
                         <viewControllerLayoutGuide type="bottom" id="nKo-aJ-pcO"/>
@@ -316,13 +325,13 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PfO-9K-Zo1">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" red="0.1273505446" green="0.39211344580000002" blue="0.84128736410000005" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Join now">
+                                <state key="normal" title="Sign in">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="16" y="174" width="368" height="36"/>
-                                </variation>
+                                <connections>
+                                    <action selector="loginButton:" destination="JBE-hg-64K" eventType="touchUpInside" id="aVL-Cc-m7I"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot password?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2J-vu-3VJ">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
@@ -370,6 +379,8 @@
                                 <exclude reference="f2J-vu-3VJ"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="SdZ-Rx-Rco"/>
+                                <exclude reference="kGB-6W-RzR"/>
                                 <exclude reference="53q-Di-Yvx"/>
                                 <exclude reference="6oK-IT-kTF"/>
                                 <exclude reference="Tea-Ux-bHK"/>
@@ -379,8 +390,6 @@
                                 <exclude reference="v6d-dS-9NJ"/>
                                 <exclude reference="Pdu-mo-Byb"/>
                                 <exclude reference="mTm-Ae-jg1"/>
-                                <exclude reference="SdZ-Rx-Rco"/>
-                                <exclude reference="kGB-6W-RzR"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -391,6 +400,8 @@
                                 <include reference="f2J-vu-3VJ"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="SdZ-Rx-Rco"/>
+                                <include reference="kGB-6W-RzR"/>
                                 <include reference="53q-Di-Yvx"/>
                                 <include reference="6oK-IT-kTF"/>
                                 <include reference="Tea-Ux-bHK"/>
@@ -400,12 +411,14 @@
                                 <include reference="v6d-dS-9NJ"/>
                                 <include reference="Pdu-mo-Byb"/>
                                 <include reference="mTm-Ae-jg1"/>
-                                <include reference="SdZ-Rx-Rco"/>
-                                <include reference="kGB-6W-RzR"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="3t9-sO-aKl"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="pp8-s0-85k" id="X7q-3g-vHj"/>
+                        <outlet property="passwordTextField" destination="U6l-MC-Cnq" id="26S-IH-MFh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="irw-yQ-xzt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -464,39 +477,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B8S-fd-heL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2143.5" y="106.5"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="Gtn-nc-16c">
-            <objects>
-                <viewController id="Kgd-2v-slP" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="T47-pa-LVq"/>
-                        <viewControllerLayoutGuide type="bottom" id="5FP-AL-X4h"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="tFU-GU-JAq">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vv4-lK-sHV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="wE3-5M-Dp7">
-            <objects>
-                <viewController id="wes-gc-2WV" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="N4y-sy-H9e"/>
-                        <viewControllerLayoutGuide type="bottom" id="OoN-dS-oD9"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="fM2-aY-RPm">
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="enn-CC-nTb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
         </scene>
     </scenes>
     <resources>
